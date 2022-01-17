@@ -27,26 +27,27 @@ def display(stack):
     if stack==[]:
        print('underflow')
     else:
-        top=len[stack]-1
-       for x in range(top-1,-1):
-       print(stack[x])
+     top=len(stack)-1
+     for x in range(top,-1,-1):
+        print(stack[x])
       
 stack=[]
 top=None
 print('Stack Operations!\n1 Push\n2 Pop\n3 Peek\n4 Display \n5 Exit\n')
-While True:
+
+while True:
 
 
-  ch=int(input('enter your choice'))
-  if ch==1:
+  ch=int(input('Enter your choice '))
+  if ch == 1:
        push(stack)
-  elif ch==2:
+  elif ch == 2:
        pop(stack)
-  elif ch==3:
+  elif ch == 3:
        peek(stack)
-  elif ch==4:
+  elif ch == 4:
        display(stack)
-  elif ch==5:
+  elif ch == 5:
           break;
   else:
      print('Please provide a valid choice!')
